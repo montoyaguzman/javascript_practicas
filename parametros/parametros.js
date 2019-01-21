@@ -8,8 +8,12 @@ const contador = 1
 // Los objetos son datos que se pasan por referencia,
 // por lo tanto su valor global si cambia
 function cumpleaños(people) {
-  // people.edad += 1
-  // return people
+  people.edad += 1
+  return people
+}
+
+// Genera un nuevo objeto para devolver
+function cumpleaños2(people) {
   return {
     ...people
     edad: people.edad + 1
